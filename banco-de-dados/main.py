@@ -1,11 +1,24 @@
 import sqlite3
 
-conexao = sqlite3.connect("banco_novo")
-
+# Conecta ou cria um novo banco SQLite
+conexao = sqlite3.connect("banco_locais.db")  # arquivo .db real
 cursor = conexao.cursor()
 
-# cursor.execute('CREATE TABLE teste(nome,idade,trabahlo)')
+# Lê o conteúdo do arquivo SQL
+with open("banco_locais.sql", "r", encoding="utf-8") as arquivo_sql:
+    sql_script = arquivo_sql.read()
 
-consulta = cursor.execute('SELECT * FROM teste  ').fetchall()
+# Executa o script inteiro (cria tabelas e insere dados)
+cursor.executescript(sql_script)
 
-print(consulta)
+# Confirma as alterações
+conexao.commit()
+
+# Agora você pode consultar os dados
+cursor.execute("SELECT * FROM locais")  # use o nome da tabela do script
+dados = cursor.fetchall()
+
+for linha in dados:
+    print(linha)
+
+conexao.close()
