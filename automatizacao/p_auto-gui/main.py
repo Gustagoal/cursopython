@@ -1,0 +1,13 @@
+import pyautogui
+
+pyautogui.PAUSE = 4 # Coloca 1 segundo de pausa
+
+
+pyautogui.press("win")
+pyautogui.write("Google")
+
+pyautogui.press("enter")
+pyautogui.write("DIO")
+pyautogui.press("enter")
+
+# pyautogui.position() mostra a posição do mouse
