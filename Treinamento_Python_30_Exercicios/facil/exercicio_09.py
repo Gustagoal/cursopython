@@ -10,3 +10,16 @@ Conte quantas vogais existem em uma frase.
 """
 
 # Escreva sua solução abaixo:
+
+
+vogais = ["a","e","i","o","u"]
+
+frase = "Ola Mundo"
+
+
+#if frase.split() in vogais:
+ #   print("Sim , temos vogais nessa frase")
+#else:
+ #   print("Não temos vogais nessa frase")
+
+print(frase.split())

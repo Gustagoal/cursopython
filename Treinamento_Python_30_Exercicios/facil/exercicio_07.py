@@ -10,3 +10,10 @@ Some os números de 1 a N.
 """
 
 # Escreva sua solução abaixo:
+
+from time import sleep
+
+for c in range(0,10):
+    print(c+c)
+    sleep(0.7)
+

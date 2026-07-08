@@ -10,3 +10,10 @@ Conte de 1 a 100 usando laço.
 """
 
 # Escreva sua solução abaixo:
+
+from time import sleep
+
+
+for c in range(0,101):
+    print(c)
+    sleep(0.7)

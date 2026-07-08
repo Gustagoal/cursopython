@@ -10,3 +10,8 @@ Inverta uma string.
 """
 
 # Escreva sua solução abaixo:
+
+
+nome = "subinoonibus"
+
+print(f"Nome invertido : {nome[::-1]}")
