@@ -10,3 +10,11 @@ Valide uma senha com regras básicas.
 """
 
 # Escreva sua solução abaixo:
+
+senha = int(input("Digite sua senha? : "))
+senha_correta = 10
+
+if senha == senha_correta:
+    print("Senha Valida , acesso autorizado")
+else:
+    print("Senha incorreta , por gentileza tente outra hora")

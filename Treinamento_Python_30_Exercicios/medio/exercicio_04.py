@@ -11,13 +11,10 @@ Conte frequência de palavras em um texto.
 
 # Escreva sua solução abaixo:
 
-text = "Hello How are you"
+text = "Bom dia , hoje o dia esta bonito"
 
-text_separete = text.split()
 
-contagem = 0
-
-for word in text_separete:
-    if word in text_separete:
-        contagem+=1
-print(f"A palavra {word} apareceu {contagem} vezes ")
+for word in text.split():
+    if word == word:
+        contagem = word.count(word)
+        print(f"A palavra {word} apareceu {word.count(word)} ")

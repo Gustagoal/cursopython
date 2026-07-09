@@ -10,3 +10,9 @@ Leia um arquivo texto e conte linhas.
 """
 
 # Escreva sua solução abaixo:
+
+
+with open("teste.txt","r") as arquivo:
+    # for c in range(10):
+        # arquivo.write("Ola\r")
+        print(len(arquivo.readlines()))

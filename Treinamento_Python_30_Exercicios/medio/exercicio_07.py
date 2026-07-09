@@ -10,3 +10,17 @@ Crie uma agenda usando dicionários.
 """
 
 # Escreva sua solução abaixo:
+
+
+manha = input("Digite sua atividade de manhã :  ")
+tarde = input("Digite sua atividade de tarde :  ")
+noite = input("Digite sua atividade de noite :  ")
+
+tarefas = {"Manhã":manha,
+           "Tarde":tarde ,
+           "Noite":noite}
+
+
+print(tarefas.items())
+
+
