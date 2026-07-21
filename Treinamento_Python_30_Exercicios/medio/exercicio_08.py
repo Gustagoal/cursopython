@@ -10,3 +10,6 @@ Implemente busca linear.
 """
 
 # Escreva sua solução abaixo:
+
+n = 14
+

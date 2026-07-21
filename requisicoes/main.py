@@ -5,4 +5,4 @@ from requests import request
 requisicao  = request("GET","https://chatgpt.com/")
 
 
-print(requisicao)
+print(requisicao[0])
