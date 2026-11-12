@@ -12,15 +12,18 @@ Crie uma agenda usando dicionários.
 # Escreva sua solução abaixo:
 
 
-manha = input("Digite sua atividade de manhã :  ")
-tarde = input("Digite sua atividade de tarde :  ")
-noite = input("Digite sua atividade de noite :  ")
+manha = input("write your active in the morning :  ")
+tarde = input("write your active in the afternoon :  ")
+noite = input("write your active in the evening :  ")
 
-tarefas = {"Manhã":manha,
-           "Tarde":tarde ,
-           "Noite":noite}
+tarefas = {"Morning":manha,
+           "Afternoon":tarde ,
+           "Evening":noite}
 
 
-print(tarefas.items())
+print(f" Minha rotina pela manhã é : {tarefas["Morning"]}")
+print(f" Minha rotina pela tarde é : {tarefas["Afternoon"]}")
+print(f" Minha rotina pela noite é : {tarefas["Evening"]}")
+
 
 
